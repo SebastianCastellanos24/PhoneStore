@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones Store</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="box">
+            <div class="flex flex-col items-center justify-between my-10 md:flex-row">
+                <div>
+                    <img class="h-32" src="img/logo.png" id="logo" alt="web log image">
+                </div>
+                <div class="float-none md:float-right">
+                    <ul>
+                        <li class="submenu">
+                            <img id = "filter" src="img/car.svg" id="img-carrito" class="m-auto my-6 md:my-0 w-full h-24 filter">
+                            <div id="car">
+                                <table id="car-list">
+                                    <thead class="w-full text-3xl text-blue-600">
+                                        <tr>
+                                            <th class="px-5 md:px-10">Image</th>
+                                            <th class="px-5 md:px-10">Name</th>
+                                            <th class="px-5 md:px-10">Price</th>
+                                            <th class="px-5 md:px-10">Quantity</th>
+                                            <th class="px-5 md:px-10">Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                                <a href="#" id="clean-car" class="block text-center bg-blue-600 text-white py-4 text-3xl mt-5 hover:bg-blue-700 clean-car">Clean Shopping Car</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="box flex h-full items-end">
+            <div>
+                <h2 class="text-blue-600">Find the best cell phones at the best prices</h2>
+                <p class="text-blue-700 text-4xl">Let's find your next cell phone</p>
+                <form action="#" id="sarch" method="post" class="my-5 flex justify-evenly md:justify-start">
+                    <input type="text" placeholder="Search for a specific reference" id="sarcher" class="px-4 py-3 w-1/2 md:mr-5 text-3xl rounded">
+                    <input type="submit" id="submit-searcher" value="Search" class="boton text-3xl rounded">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="description">
+        <div class="box flex flex-col md:flex-row gap-10 md:justify-between py-20 text-white text-3xl text-center">
+            <div class="md:w-1/3">
+                <img src="img/reference.svg" alt="reference phone image" class="w-48 m-auto pb-10">
+                <p>More than 100 references with the best quality and different styles</p>
+            </div>
+            <div class="md:w-1/3">
+                <img class="w-48 m-auto pb-10" src="img/among.svg" alt="among image">
+                <p>Stand out among the people with the most modern and high-tech cell phones</p>
+            </div>
+            <div class="md:w-1/3">
+                <img class="w-48 m-auto pb-10" src="img/gift.svg" alt="gift image">
+                <p>Find the best gift for a special occasion at the best price</p>
+            </div>
+        </div>
+    </section>
+
+    <main id="phones-list">
+        <h1 id="heading" class="text-center text-blue-600 my-12">Available cell phones</h1>
+        <div class="box grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="phone w-full md:w-96">
+                <div class="card">   
+                    <img src="./img/phone1.jpg" class="hidden">
+                    <h3>Lorem, ipsum dolor sit amet</h3>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus amet laborum.</p>
+                    <img src="img/estrellas.png" alt="stars image">
+                    <p class="price"><span>$6500000</span>$6000000</p>
+                    <a href="#" data-id="1" class="addCart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="phone">
+                <div class="card">
+                    <img src="./img/phone2.jpg" class="hidden">
+                    <h3>Lorem, ipsum dolor sit amet</h3>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus amet laborum.</p>
+                    <img src="img/estrellas.png" alt="stars image">
+                    <p class="price"><span>$7500000</span>$7000000</p>
+                    <a href="#" data-id="2" class="addCart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="phone">
+                <div class="card">
+                    <img src="./img/phone3.jpg" class="hidden">   
+                    <h3>Lorem, ipsum dolor sit amet</h3>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus amet laborum.</p>
+                    <img src="img/estrellas.png" alt="stars image">
+                    <p class="price"><span>$5500000</span>$5350000</p>
+                    <a href="#" data-id="3" class="addCart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="phone">
+                <div class="card">   
+                    <img src="./img/phone4.jpg" class="hidden">
+                    <h3>Lorem, ipsum dolor sit amet</h3>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus amet laborum.</p>
+                    <img src="img/estrellas.png" alt="stars image">
+                    <p class="price"><span>$1500000</span>$1200000</p>
+                    <a href="#" data-id="4" class="addCart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="phone">
+                <div class="card">
+                    <img src="./img/phone5.jpg" class="hidden">   
+                    <h3>Lorem, ipsum dolor sit amet</h3>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus amet laborum.</p>
+                    <img src="img/estrellas.png" alt="stars image">
+                    <p class="price"><span>$1300000</span>$1000000</p>
+                    <a href="#" data-id="5" class="addCart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="phone">
+                <div class="card">
+                    <img src="./img/phone6.jpg" class="hidden">   
+                    <h3>Lorem, ipsum dolor sit amet</h3>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus amet laborum.</p>
+                    <img src="img/estrellas.png" alt="stars image">
+                    <p class="price"><span>$2500000</span>$2000000</p>
+                    <a href="#" data-id="6" class="addCart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="phone">
+                <div class="card">   
+                    <img src="./img/phone7.jpg" class="hidden">   
+                    <h3>Lorem, ipsum dolor sit amet</h3>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus amet laborum.</p>
+                    <img src="img/estrellas.png" alt="stars image">
+                    <p class="price"><span>$7500000</span>$7200000</p>
+                    <a href="#" data-id="7" class="addCart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="phone">
+                <div class="card">   
+                    <img src="./img/phone8.jpg" class="hidden">   
+                    <h3>Lorem, ipsum dolor sit amet</h3>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus amet laborum.</p>
+                    <img src="img/estrellas.png" alt="stars image">
+                    <p class="price"><span>$5500000</span>$50000000</p>
+                    <a href="#" data-id="8" class="addCart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="phone">
+                <div class="card">   
+                    <img src="./img/phone9.jpg" class="hidden">   
+                    <h3>Lorem, ipsum dolor sit amet</h3>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus amet laborum.</p>
+                    <img src="img/estrellas.png" alt="stars image">
+                    <p class="price"><span>$2000000</span>$1800000</p>
+                    <a href="#" data-id="9" class="addCart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="phone">
+                <div class="card">   
+                    <img src="./img/phone10.jpg" class="hidden">   
+                    <h3>Lorem, ipsum dolor sit amet</h3>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus amet laborum.</p>
+                    <img src="img/estrellas.png" alt="stars image">
+                    <p class="price"><span>$3500000</span>$3200000</p>
+                    <a href="#" data-id="10" class="addCart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="phone">
+                <div class="card">   
+                    <img src="./img/phone11.jpg" class="hidden">   
+                    <h3>Lorem, ipsum dolor sit amet</h3>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus amet laborum.</p>
+                    <img src="img/estrellas.png" alt="stars image">
+                    <p class="price"><span>$1500000</span>$1000000</p>
+                    <a href="#" data-id="11" class="addCart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="phone">
+                <div class="card">   
+                    <img src="./img/phone12.jpg" class="hidden">   
+                    <h3>Lorem, ipsum dolor sit amet</h3>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus amet laborum.</p>
+                    <img src="img/estrellas.png" alt="stars image">
+                    <p class="price"><span>$3500000</span>$3000000</p>
+                    <a href="#" data-id="12" class="addCart">Add to cart</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="footer" class="footer description mt-24">
+        <div class="box flex flex-col md:flex-row justify-evenly py-20 text-white gap-10">
+            <div>
+                <nav id="principal" class="menu flex flex-col text-center">
+                    <a class="link" href="#">Send a gift</a>
+                    <a class="link" href="#">Offer your old cell phone</a>
+                    <a class="link" href="#">Offers</a>
+                    <a class="link" href="#">Suport</a>
+                    <a class="link" href="#">Themes</a>
+                </nav>
+            </div>
+            <div class="">
+                <nav id="secundaria" class="menu flex flex-col text-center">
+                    <a class="link" href="#">About us</a>
+                    <a class="link" href="#">Search a job</a>
+                    <a class="link" href="#">Blog</a>
+                </nav>
+            </div>
+            <div class="">
+                <nav id="secundaria" class="menu flex flex-col text-center">
+                    <a class="link" href="#">Call Us</a>
+                    <a class="link" href="#">Contact Us</a>
+                    <a class="link" href="#">Look your new phone</a>
+                    <a class="link" href="#">Software</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="myFooter pb-16">
+            <div class="logos">
+                <a href="#"><img src="img/linkedin-logo.svg" alt="LinkedIn Log"></a>
+                <a href="#"><img src="img/instagram-logo.svg" alt="LinkedIn Log"></a>
+                <a href="#"><img src="img/git-hub-logo.svg" alt="GitHub Log"></a>
+            </div>
+            <p class="terminos">Terms of Use - Privacy Policy</p>
+            <div class="firma">
+                <p>© 2022 </p>
+                <p>Sebastian Castellanos</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
