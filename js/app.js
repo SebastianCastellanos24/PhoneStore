@@ -16,6 +16,13 @@ function loadEvents () {
     //Delete phones
     car.addEventListener("click", deletePhone);
 
+    //Show store files
+    document.addEventListener("DOMContentLoaded", () => {
+        phonesInCar = JSON.parse(localStorage.getItem("myCar")) || [];
+        carHTML();
+        colorCar()
+    })
+
     //Cleand phones
     cleanCarBtn.addEventListener("click", cleanPhones);
 
@@ -82,6 +89,8 @@ function readPhoneInfo (phone) {
 
 }
 
+
+
 //Show the phones in the car
 function carHTML () {
 
@@ -105,8 +114,15 @@ function carHTML () {
 
         //Add the HTML to the tbody
         boxCar.appendChild(row);
-
     })
+
+    //Add car to storage
+    addToStorage();
+
+}
+
+function addToStorage () {
+    localStorage.setItem("myCar", JSON.stringify(phonesInCar));
 }
 
 function colorCar () {
@@ -116,7 +132,6 @@ function colorCar () {
     if(Object.entries(phonesInCar).length !== 0) {
         filter.classList.add("noFilter");
     }  
-
 }
 
 //Eliminar los cursos del tbody
